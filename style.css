@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+	color: #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	color: #fff;
+}
+
+.navbar-nav a{
+	position: relative;
+
+}
+.navbar-nav a:before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background: #1abc9c;
+	bottom: 0;
+	left: 0;
+	transition: all 0.3s linear;
+}
+.navbar-nav a:hover:before{
+	width: 100%;
+	
+}
+
+/*body{
+	font-family: Montserrat;
+}*/
+
+header {
+    background: #2c3e50;
+    color: #fff;
+}
+header h4 {
+    padding-top: 12px;
+}
+.header_bottom{
+	background: #1abc9c;
+	padding: 45px 0;
+	color: #fff;
+}
+.header_bottom h2{
+	position: relative;
+
+	text-align:center;
+}
+.header_bottom h2:before {
+    content: "";
+    position: absolute;
+    width: 9%;
+    height: 2px;
+    background: #fff;
+    bottom: -10px;
+}
+.header_bottom h2:after {
+    content: "";
+    position: absolute;
+    width: 9%;
+    height: 2px;
+    background: #fff;
+    bottom: -10px;
+    right: 39%;
+}
+.position{
+	position: relative;
+}
+.abs {
+    position: absolute;
+    bottom: -13px;
+    right: 49%;
+}
+.main h2, .about h2{
+	position: relative;
+
+}
+.main h2:before {
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background: #111;
+    bottom: -10px;
+}
+.main h2:after {
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background: #111;
+    bottom: -10px;
+    right: 42%;
+}
+.portfolio img {
+    height: 100%;
+    box-shadow: 2px 2px 4px #111;
+    transition: all 0.5s linear;
+    position: relative;
+
+    
+
+}
+.detail{
+	opacity: 0;
+	transition: all 0.5s linear;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: red;
+	font-weight: bold;
+}
+.portfolio:hover .detail{
+	opacity: 1;
+}
+.portfolio{
+	overflow: hidden;
+	position: relative;
+	margin: 15px 0;
+}
+.portfolio:hover img{
+	transform: scale(1.2);
+	
+}
+
+.about{
+	background: #1abc9c;
+	padding: 45px 0;
+}
+.about h2:before {
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background: #fff;
+    bottom: -10px;
+}
+.about h2:after {
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background: #fff;
+    bottom: -10px;
+    right: 42%;
+}
+.about{
+	color: #fff;
+}
+.para{
+	margin: 25px 0;
+}
+.btn.border{
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	border:none !important;
+
+}
+.border i{
+	margin-right: 10px;
+}
+
+.border:before{
+	content: "";
+	position: absolute;
+	width: 0;
+	background: #111;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 0.5s linear;
+	
+}
+.border:hover:before{
+	content: "";
+	position: absolute;
+	width: 51%;
+	background: #111;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #fff;
+	border-radius:none;
+	z-index: -1;
+}
+.border:after{
+	content: "";
+	position: absolute;
+	width: 0;
+	background: #111;
+	height: 100%;
+	top: 0;
+	right: 0;
+	transition: all 0.5s linear;
+}
+.border:hover:after{
+	content: "";
+	position: absolute;
+	width: 50%;
+	background: #111;
+	height: 100%;
+	top: 0;
+	right: 0;
+	color: #fff;
+	border:none;
+	z-index: -1;
+}
+
+.contact_me h2{
+	position: relative;
+
+	text-align:center;
+}
+.contact_me h2:before {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 2px;
+    background: #111;
+    bottom: -10px;
+}
+.contact_me h2:after {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 2px;
+    background: #111;
+    bottom: -10px;
+    right: 41%;
+}
+.contact_me input, .contact_me textarea {
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+     border-top: none; 
+     border-left: none; 
+     border-right: none; 
+     border-radius: 0;
+}
+.btn_send{
+	background: #1abc9c;
+	color: #fff;
+}
+footer{
+	background: #2c3e50;
+	color: #fff;
+}
+footer a {
+	text-decoration: none;
+	color: #1abc9c;
+}
+.footer_bottom{
+	background: #111;
+	color: #fff;
+}
+.foot_in{
+	margin: 15px 0;
+}
+.foot_in i {
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    color: #111;
+    margin: 0 5px;
+    transition: all 0.5s linear;
+}
+.foot_in i:hover {
+    transform: rotate(360deg);
+    color: #fff;
+    background: #1abc9c;
+}
+.fa-arrow-up{
+	position: fixed;
+	padding: 15px;
+	background: #1abc9c;
+	color: #fff;
+	bottom: 15px;
+	right: 15px;
+}
